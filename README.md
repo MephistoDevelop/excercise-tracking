@@ -1,68 +1,262 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Excercise Tracker
 
-## Available Scripts
+> Excercise tracker application made with MERN (Mongo- Express - React - Node.js) stack deployed on heroku.
 
-In the project directory, you can run:
+### Screenshot
 
-### `yarn start`
+![screenshot]()
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This is a application to save and organize recipes filtering by name and types
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Built With:
 
-### `yarn test`
+- Html,Css,JavaScript
+- ReactJS
+- Redux
+- React Router
+- React Hooks
+- axios Http request
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Live Demo
 
-### `yarn build`
+[Live Demo Link]()
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+This aplication is a Web Single Page made with React JS,Redux and heroku using visual studio Code like developer framework.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+this page wants to show a  list of recipes of delicius meals and show it in a friendly and nicely User interface
 
-### `yarn eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- npm version  6.14.4
+- Visual Studio Code
+- Ubuntu OS or Linux distribution
+- Heroku account
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To use this project on your computer you first need to copy or download this repository on your computer .
+after downloading the repository we need to run this commands:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To install npm dependencies with
 
-## Learn More
+```npm install```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+PropTypes npm library:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```npm i -S prop-types ```
 
-### Code Splitting
+React testing library:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```npm install --save-dev @testing-library/react ```
 
-### Analyzing the Bundle Size
+```
+npm install eslint eslint-config-airbnb --save-dev
+npm install --save react-router-dom
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+```
+after you will need to enter to [Stickler Page](https://stickler-ci.com/) and activate your repository.
 
-### Making a Progressive Web App
+To Run the Linter files you will need to run this commands on the terminal :
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+```
+npm install eslint eslint-config-airbnb --save-dev
+npx eslint --init
 
-### Advanced Configuration
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+if you finish of install all npm dependencies we can run ``` npm test ``` to check that the tests work correctly.
+
+if wvwrything goes well, we can run now ``` npm run start ``` to start the live view from the project on http://localhost:3000
 
 ### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Deploy to Heroku with CLI
 
-### `yarn build` fails to minify
+```
+git add .
+git commit -m "Start with create-react-app"
+git push heroku master
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+you need to change the $BRANCH_NAME, by your working branch.
+
+git push heroku $BRANCH_NAME:master
+
+heroku open
+
+```
+
+Deploy made with :
+
+https://github.com/mars/create-react-app-buildpack
+
+## Test
+
+On this project we are going to use [React Testing Library](https://testing-library.com/docs/react-testing-library/setup) to run the tests.
+
+React Testing Library does not require any configuration to be used (React Testing Library does not require that you use Jest).
+
+Global Config
+
+Adding options to your global test config can simplify the setup and teardown of tests in individual files.
+
+to install this library test we need to run this command on terminal folder
+````npm install --save-dev @testing-library/dom````
+
+To run the test created we only need to run this command:
+
+``` npm test ```
+
+## Author
+
+👤 **Cristian Ines Hernandez A. - MephistoDevelop**
+
+- Github: [@MephistoDevelop](https://github.com/MephistoDevelop)# Excercise Tracker
+
+> Excercise tracker application made with MERN (Mongo- Express - React - Node.js) stack deployed on heroku.
+
+### Screenshot
+
+![screenshot]()
+
+This is a application to save and organize recipes filtering by name and types
+
+## Built With:
+
+- Html,Css,JavaScript
+- ReactJS
+- Redux
+- React Router
+- React Hooks
+- axios Http request
+
+## Live Demo
+
+[Live Demo Link]()
+
+## Getting Started
+
+This aplication is a Web Single Page made with React JS,Redux and heroku using visual studio Code like developer framework.
+
+this page wants to show a  list of recipes of delicius meals and show it in a friendly and nicely User interface
+
+### Prerequisites
+
+- npm version  6.14.4
+- Visual Studio Code
+- Ubuntu OS or Linux distribution
+- Heroku account
+
+### Setup
+
+To use this project on your computer you first need to copy or download this repository on your computer .
+after downloading the repository we need to run this commands:
+
+To install npm dependencies with
+
+```npm install```
+
+PropTypes npm library:
+
+```npm i -S prop-types ```
+
+React testing library:
+
+```npm install --save-dev @testing-library/react ```
+
+```
+npm install eslint eslint-config-airbnb --save-dev
+npm install --save react-router-dom
+
+```
+after you will need to enter to [Stickler Page](https://stickler-ci.com/) and activate your repository.
+
+To Run the Linter files you will need to run this commands on the terminal :
+
+```
+npm install eslint eslint-config-airbnb --save-dev
+npx eslint --init
+
+```
+
+if you finish of install all npm dependencies we can run ``` npm test ``` to check that the tests work correctly.
+
+if wvwrything goes well, we can run now ``` npm run start ``` to start the live view from the project on http://localhost:3000
+
+### Deployment
+
+Deploy to Heroku with CLI
+
+```
+git add .
+git commit -m "Start with create-react-app"
+git push heroku master
+
+you need to change the $BRANCH_NAME, by your working branch.
+
+git push heroku $BRANCH_NAME:master
+
+heroku open
+
+```
+
+Deploy made with :
+
+https://github.com/mars/create-react-app-buildpack
+
+## Test
+
+On this project we are going to use [React Testing Library](https://testing-library.com/docs/react-testing-library/setup) to run the tests.
+
+React Testing Library does not require any configuration to be used (React Testing Library does not require that you use Jest).
+
+Global Config
+
+Adding options to your global test config can simplify the setup and teardown of tests in individual files.
+
+to install this library test we need to run this command on terminal folder
+````npm install --save-dev @testing-library/dom````
+
+To run the test created we only need to run this command:
+
+``` npm test ```
+
+## Author
+
+👤 **Cristian Ines Hernandez A. - MephistoDevelop**
+
+- Github: [@MephistoDevelop](https://github.com/MephistoDevelop)
+- Twitter: [@MephistoDevelop](https://twitter.com/MephistoDevelop)
+- Linkedin: [Cristian Hernandez](https://www.linkedin.com/in/cristian-hernandez1992/)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
+
+- Twitter: [@MephistoDevelop](https://twitter.com/MephistoDevelop)
+- Linkedin: [Cristian Hernandez](https://www.linkedin.com/in/cristian-hernandez1992/)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
